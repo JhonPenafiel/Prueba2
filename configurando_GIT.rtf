@@ -1,0 +1,105 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red47\green180\blue29;
+\red180\green36\blue25;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c20238\c73898\c14947;
+\cssrgb\c76409\c21698\c12524;}
+\margl1440\margr1440\vieww20000\viewh9820\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Instalando Homebrew:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf2 \cb3 \CocoaLigature0 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"\
+\
+- Instalando git:\
+\
+brew install git\
+\
+- Verificando versi\'f3n:\
+\
+git --version\
+\
+- Configurando nombre de usuario y email:\
+\
+git config --global user.name "Jhon Penafiel"\
+git config --global user.email japenafiel@poligran.edu.co\
+\
+- Revisando los datos anteriores:\
+\
+git config  --list\
+\
+- Cambiando directorio:\
+\
+cd Documents\
+cd CURSOS_POLITECNICO\
+cd 2024-1\
+\
+- Ver contenido es este carpeta:\
+\
+ls  %%. Resultando en GIT\
+\
+- Cambiando directorio a esa carpeta:\
+\
+cd GIT\
+\
+- Inicializar un repositorio vac\'edo de git:\
+\
+git init\
+\
+- Para ver que ha creado una carpeta:\
+\
+ls -a %% resultando en .			..			.git  \
+\
+- Para pasar un documento (ejemplo archivo.txt) del working directory al stage\
+\
+git add archivo.txt\
+\
+- No muestra error. Pero como saber del estado de ese archivo\
+\
+git status %% aparecer\'e1 \cf4 \cb3 new file:   archivo.txt \'85 \cf2 \cb3 - en verde indicando que fue a\'f1adido al stage, los dem\'e1s archivos en dicha carpeta aparecer\'e1n en rojo\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb3 10.1002@cae.22243.pdf\cf2 \cb3 \
+	\cf5 \cb3 Screen Shot 2024-01-09 at 9.17.45 PM.png\cf2 \cb3 \
+	\cf5 \cb3 configurando_GIT.rtf\cf2 \cb3  en rojo indicando que est\'e1 en el working directory \cf5 \cb3 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 \cb3 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \cb3 - CUIDADO: 1. trabaj\'e9 el lunes en el archivo.txt y lo envi\'e9 a la etapa 2 (stage), como lo acab\'e9 de hacer, el resultado ser\'e1:\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf4 \cb3 new file:   archivo.txt\cf2 \cb3 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf5 \cb3 10.1002@cae.22243.pdf\cf2 \cb3 \
+	\cf5 \cb3 Screen Shot 2024-01-09 at 9.17.45 PM.png\cf2 \cb3 \
+	\cf5 \cb3 configurando_GIT.rtf\cf2 \cb3 \
+\
+2. Si el martes modifico el archivo.txt, y vuelvo e indago por el estado, el resultado ser\'e1:\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf4 \cb3 new file:   archivo.txt\cf2 \cb3 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf5 \cb3 modified:   archivo.txt\cf2 \cb3 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf5 \cb3 10.1002@cae.22243.pdf\cf2 \cb3 \
+	\cf5 \cb3 Screen Shot 2024-01-09 at 9.17.45 PM.png\cf2 \cb3 \
+	\cf5 \cb3 configurando_GIT.rtf\cf2 \cb3 \
+\
+3. As\'ed que una vez modificado un archivo, si queremos que vaya a la fase de stage con las modificaciones debemos darle de nuevo git add archivo.txt\
+\
+- Si queremos mover todos los archivos dentro de la carpeta a la fase stage, y no queremos hacerlo uno por uno, se debe utilizar \
+\
+git add \'97-all\
+\
+ }
